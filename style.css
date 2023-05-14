@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+h2 {
+    margin: 0;
+}
+
 .mainContainer,
 form,
 .leftContainer,
@@ -41,13 +45,22 @@ form {
         width: 67%;
     }
 
-        .formRows {
-            flex-direction: column;
+        .mainFormElements {
+            background-color: rgb(199, 197, 197);
         }
 
-            .inputLabelPair {
+            .formRows {
                 flex-direction: column;
             }
+
+            .formRows > div {
+                justify-content: space-around;
+            }
+
+                .inputLabelPair {
+                    flex-direction: column;
+                    width: min(40%, 350px);
+                }
 
 
         
