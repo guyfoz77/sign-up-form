@@ -9,7 +9,9 @@ body {
 .mainContainer,
 form,
 .leftContainer,
-.rightContainer {
+.rightContainer,
+.leftColumn,
+.rightColumn {
     display: flex;
 }
 
@@ -17,7 +19,11 @@ form,
     width: 100vw; height: 100vh;
     
 }
-
+    .leftContainer,
+    .rightContainer{
+        flex-direction: column;
+    }
+    
     .leftContainer {
         flex: 1, 1, auto;
         background-color: aqua;
@@ -34,8 +40,8 @@ form,
             
         }
 
-        .leftContainer,
-        .rightContainer {
+        .leftColumn,
+        .rightColumn {
             flex-direction: column;
         }
 
