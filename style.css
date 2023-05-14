@@ -1,3 +1,25 @@
 * {
     font-family: 'Didact Gothic', sans-serif;
 }
+
+body {
+    margin: 0;
+}
+
+.mainContainer{
+    display: flex;
+    width: 100vw; height: 100vh;
+    
+}
+
+    .leftContainer {
+        flex: 1, 1, auto;
+        background-color: aqua;
+        width: 33%;
+    }
+
+    .rightContainer {
+        flex: 2, 2, auto;
+        background-color: aquamarine;
+        width: 67%;
+    }
