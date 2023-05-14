@@ -47,10 +47,12 @@ form {
 
         .mainFormElements {
             background-color: rgb(199, 197, 197);
+            padding: 3%;
         }
 
             .formRows {
                 flex-direction: column;
+                gap: 10px;
             }
 
             .formRows > div {
@@ -60,7 +62,19 @@ form {
                 .inputLabelPair {
                     flex-direction: column;
                     width: min(40%, 350px);
+                    position: relative;
                 }
+
+                    label {
+                        position: relative;
+                        font-size: 10px;
+                        top: 15px;
+                        left: 5px;
+                    }
+
+                    input {
+                        height: 40px;
+                    }
 
 
         
