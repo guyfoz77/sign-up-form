@@ -10,10 +10,7 @@ body {
 form,
 .leftContainer,
 .rightContainer,
-.mainFormElements,
-.formColumns,
-.leftColumn,
-.rightColumn {
+.mainFormElements {
     display: flex;
 }
 
@@ -41,8 +38,5 @@ form {
         width: 67%;
     }
 
-        .leftColumn,
-        .rightColumn {
-            flex-direction: column;
-        }
+        
 

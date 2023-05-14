@@ -17,22 +17,35 @@
             <form action="" method="post">
                 <div class="mainFormElements">
                     <h2>Let's do this!</h2>
-                    <div class="formColumns">
-                        <div class="leftColumn">
-                            <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" name="firstName" placeholder="First Name *" required>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email *" required>
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password" placeholder="Password *" required>
+                    <div class="formRows">
+                        <div class="row1">
+                            <div class="inputLabelPair">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="First Name *" required>
+                            </div>
+                            <div class="inputLabelPair">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Last Name *" required>
+                            </div>
                         </div>
-                        <div class="rightColumn">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName" name="lastName" placeholder="Last Name *" required>
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Phone Number">
-                            <label for="passwordConfirm">Confirm Password</label>
-                            <input type="password" name="" id="passwordConfirm" placeholder="Confirm Password *" required>
+                        <div class="row2">
+                            <div class="inputLabelPair">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email *" required>
+                            </div>
+                            <div class="inputLabelPair"></div>
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                            </div>
+                        <div class="row3">
+                            <div class="inputLabelPair">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" placeholder="Password *" required>
+                            </div>
+                            <div class="inputLabelPair">
+                                <label for="passwordConfirm">Confirm Password</label>
+                                <input type="password" name="" id="passwordConfirm" placeholder="Confirm Password *" required>
+                            </div>
                         </div>
                     </div>
                 </div>
