@@ -19,7 +19,8 @@ form,
 
 .leftContainer,
 .rightContainer,
-.mainFormElements{
+.mainFormElements,
+form {
         flex-direction: column;
 }
 
@@ -44,5 +45,4 @@ form,
         .rightColumn {
             flex-direction: column;
         }
-
 
