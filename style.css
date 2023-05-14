@@ -10,20 +10,24 @@ body {
 form,
 .leftContainer,
 .rightContainer,
+.mainFormElements,
+.formColumns,
 .leftColumn,
 .rightColumn {
     display: flex;
+}
+
+.leftContainer,
+.rightContainer,
+.mainFormElements{
+        flex-direction: column;
 }
 
 .mainContainer{
     width: 100vw; height: 100vh;
     
 }
-    .leftContainer,
-    .rightContainer{
-        flex-direction: column;
-    }
-    
+
     .leftContainer {
         flex: 1, 1, auto;
         background-color: aqua;
@@ -35,10 +39,6 @@ form,
         background-color: aquamarine;
         width: 67%;
     }
-
-        form {
-            
-        }
 
         .leftColumn,
         .rightColumn {
