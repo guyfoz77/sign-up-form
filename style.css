@@ -10,7 +10,10 @@ body {
 form,
 .leftContainer,
 .rightContainer,
-.mainFormElements {
+.mainFormElements,
+.inputLabelPair,
+.formRows,
+.formRows > div {
     display: flex;
 }
 
@@ -37,6 +40,15 @@ form {
         background-color: aquamarine;
         width: 67%;
     }
+
+        .formRows {
+            flex-direction: column;
+        }
+
+            .inputLabelPair {
+                flex-direction: column;
+            }
+
 
         
 
