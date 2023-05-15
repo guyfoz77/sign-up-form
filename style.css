@@ -1,5 +1,10 @@
+:root {
+    --standardPadding: 20px;
+}
+
 * {
     font-family: 'Didact Gothic', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,6 +13,10 @@ body {
 
 h2 {
     margin: 0;
+}
+
+.rightContainer>p {
+    padding: 0 var(--standardPadding);
 }
 
 .mainContainer,
@@ -35,19 +44,20 @@ form {
 
     .leftContainer {
         flex: 1, 1, auto;
-        background-color: aqua;
         width: 33%;
+        background: url(images/mars-side-image.jpg) no-repeat center/auto 100%;
     }
 
     .rightContainer {
         flex: 2, 2, auto;
-        background-color: aquamarine;
+        background-color: rgb(235, 235, 235);
         width: 67%;
+        justify-content: center;
     }
 
         .mainFormElements {
-            background-color: rgb(199, 197, 197);
-            padding: 3%;
+            background-color: white;
+            padding: var(--standardPadding);
         }
 
             .formRows {
@@ -56,7 +66,7 @@ form {
             }
 
             .formRows > div {
-                justify-content: space-around;
+                justify-content: space-between;
             }
 
                 .inputLabelPair {
@@ -76,6 +86,8 @@ form {
                         height: 40px;
                     }
 
-
+    input[type='button'] {
+        margin: var(--standardPadding);
+    }
         
 
