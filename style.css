@@ -59,6 +59,7 @@ form {
         .mainFormElements {
             background-color: white;
             padding: var(--standardPadding);
+            box-shadow: 0px 22px 20px -20px black;
         }
 
             .formRows {
