@@ -88,6 +88,16 @@ form {
 
     input[type='button'] {
         margin: var(--standardPadding);
+        appearance: none;
+        border-style: outset;
+        border-radius: 5px;
     }
-        
 
+    input[type='button']:hover {
+        background-color: coral;
+    }
+
+    input[type='button']:active {
+        border-style: inset;
+        background-color: rgb(209, 105, 66);
+    }
