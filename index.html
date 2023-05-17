@@ -20,33 +20,34 @@
                     <p>Items marked with a * are mandatory.</p>
                     <div class="formRows">
                         <div class="row1">
+                            <!-- Do not remove the blank placeholders! Required so the input:not(placeholder-shown) matches in the CSS -->
                             <div class="inputLabelPair">
+                                <input type="text" id="firstName" name="firstName" placeholder=" " required>
                                 <label for="firstName">First Name</label>
-                                <input type="text" id="firstName" name="firstName" required>
                             </div>
                             <div class="inputLabelPair">
+                                <input type="text" id="lastName" name="lastName" placeholder=" " required>
                                 <label for="lastName">Last Name</label>
-                                <input type="text" id="lastName" name="lastName" required>
                             </div>
                         </div>
                         <div class="row2">
                             <div class="inputLabelPair">
+                                <input type="email" name="email" id="email" placeholder=" " required>
                                 <label for="email">Email</label>
-                                <input type="email" name="email" id="email" required>
                             </div>
                             <div class="inputLabelPair">
+                                <input type="tel" name="phone" id="phone" placeholder=" ">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" name="phone" id="phone">
                             </div>
                         </div>
                         <div class="row3">
                             <div class="inputLabelPair">
+                                <input type="password" name="password" id="password" placeholder=" " required>
                                 <label for="password">Password</label>
-                                <input type="password" name="password" id="password" required>
                             </div>
                             <div class="inputLabelPair">
+                                <input type="password" name="" id="passwordConfirm" placeholder=" " required>
                                 <label for="passwordConfirm">Confirm Password</label>
-                                <input type="password" name="" id="passwordConfirm" required>
                             </div>
                         </div>
                     </div>

@@ -80,6 +80,7 @@ form {
                     flex-direction: column;
                     width: min(40%, 350px);
                     position: relative;
+                    flex-direction: column-reverse;
                 }
 
                     label {
@@ -89,10 +90,17 @@ form {
                         left: 5px;
                     }
 
-                    /* input:focus ~ label {
+                    input:focus + label {
                         animation-name: labelText;
-                        animation-duration: 2s;
-                    } */
+                        animation-duration: 0.2s;
+                        animation-fill-mode: forwards;
+                    } 
+                    
+                    input:not(:placeholder-shown) + label {
+                        font-size: 10px;
+                        top: 2px;
+                        left: 5px;
+                    }
 
                     input {
                         height: 40px;
