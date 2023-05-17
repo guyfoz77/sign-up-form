@@ -3,6 +3,11 @@
     --accent-color: coral;
 }
 
+@keyframes labelText {
+    from {font-size: 15px; top: 10px; left: 5px;}
+    to {font-size: 10px; top: 2px; left: 5px;}
+}
+
 * {
     font-family: 'Didact Gothic', sans-serif;
     box-sizing: border-box;
@@ -78,11 +83,16 @@ form {
                 }
 
                     label {
-                        position: relative;
-                        font-size: 10px;
-                        top: 15px;
+                        position: absolute;
+                        font-size: 15px;
+                        top: 10px;
                         left: 5px;
                     }
+
+                    /* input:focus ~ label {
+                        animation-name: labelText;
+                        animation-duration: 2s;
+                    } */
 
                     input {
                         height: 40px;
