@@ -1,3 +1,5 @@
+/* Style elements differently with invalid/valid input. Match it with placeholder-shown to ensure it only applies if user enters text. */
+
 :root {
     --standardPadding: 20px;
     --accent-color: coral;
@@ -90,16 +92,15 @@ form {
                         left: 5px;
                     }
 
-                    input:focus + label {
+                    /* placeholder-shown is used here to select inputs with no text entered. */
+                    input:focus:placeholder-shown + label {
                         animation-name: labelText;
                         animation-duration: 0.2s;
                         animation-fill-mode: forwards;
                     } 
                     
                     input:not(:placeholder-shown) + label {
-                        font-size: 10px;
-                        top: 2px;
-                        left: 5px;
+                        font-size: 10px; top: 2px; left: 5px;
                     }
 
                     input {
