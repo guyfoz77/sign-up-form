@@ -1,4 +1,4 @@
-/* Style elements differently with invalid/valid input. Match it with placeholder-shown to ensure it only applies if user enters text. */
+/* Make sure user cant submit if passwords dont match */
 
 :root {
     --standardPadding: 20px;
@@ -75,12 +75,13 @@ form {
             }
 
             .formRows > div {
-                justify-content: space-between;
+                justify-content: flex-start;
+                gap: 10px;
             }
 
                 .inputLabelPair {
                     flex-direction: column;
-                    width: min(40%, 350px);
+                    width: min(45%, 350px);
                     position: relative;
                     flex-direction: column-reverse;
                 }
