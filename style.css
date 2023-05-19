@@ -131,6 +131,11 @@ form {
         appearance: none;
         border: solid;
         border-radius: 5px;
+        box-shadow: 0.3px 0.3px 1px black;
+    }
+
+    .invalid:invalid {
+        border-color: red
     }
 
     
