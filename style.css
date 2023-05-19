@@ -112,17 +112,17 @@ form {
         border-color: var(--accent-color);
     }
 
-    input[type='button'] {
+    input[type='submit'] {
         margin: var(--standardPadding);
         border: outset black;
         border-radius: 5px;
     }
 
-    input[type='button']:hover {
+    input[type='submit']:hover {
         background-color: var(--accent-color);
     }
 
-    input[type='button']:active {
+    input[type='submit']:active {
         border-style: inset;
         background-color: rgb(209, 105, 66);
     }
@@ -132,4 +132,6 @@ form {
         border: solid;
         border-radius: 5px;
     }
+
+    
 
